@@ -1,0 +1,153 @@
+/* style.css */
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #5cb85c; /* Verde que remete ao campo */
+    color: rgb(59, 5, 5);
+    padding: 1em 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1em;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+.hero {
+    background-image: url('imagens/banner_campo_cidade.jpg'); /* Imagem de destaque */
+    background-size: cover;
+    color: rgb(49, 25, 25);
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+    color: #5cb85c;
+    border-bottom: 2px solid #5cb85c;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.event-list {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.event-card {
+    flex: 1 0 300px;
+    border: 1px solid #1a0202;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.event-card h3 {
+    color: #337ab7; /* Azul que pode remeter à cidade */
+    margin-top: 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #130202;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.button {
+    display: inline-block;
+    background-color: #337ab7;
+    color: rgb(19, 1, 1);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button.small {
+    padding: 8px 15px;
+    font-size: 0.9em;
+}
+
+.button:hover {
+    background-color: #23527c;
+}
+
+footer {
+    background-color: #333;
+    color: rgb(32, 7, 7);
+    text-align: center;
+    padding: 1em 0;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+}
